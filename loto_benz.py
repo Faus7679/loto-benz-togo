@@ -92,11 +92,11 @@ def all_numbers(tirages: list[dict]) -> list[int]:
 
 def compute_frequency(tirages: list[dict]) -> Counter:
     return Counter(all_numbers(tirages))
-    def compute_frequency(tirages: list[dict]) -> Counter:
+def compute_frequency(tirages: list[dict]) -> Counter:
         return Counter(all_numbers(tirages))
 
-    def hot_numbers(freq: Counter, top: int = 15) -> list[int]:
 def hot_numbers(freq: Counter, top: int = 15) -> list[int]:
+# def hot_numbers(freq: Counter, top: int = 15) -> list[int]:
     """Most frequently drawn numbers."""
     return [n for n, _ in freq.most_common(top)]
 
